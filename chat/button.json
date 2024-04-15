@@ -1,32 +1,112 @@
 {
   "start": {
     "button_1": {
-      "callback": "first_hello_message"
+      "callback": "main_menu"
     },
     "button_2": {
-      "callback": "first_hello_message"
+      "callback": "main_menu"
     },
     "button_3": {
-      "callback": "first_hello_message"
+      "callback": "main_menu"
     },
     "button_4": {
-      "callback": "first_hello_message"
+      "callback": "main_menu"
     }
   },
-  "first_hello_message": {
+  "main_menu": {
     "button_1": {
-      "callback": "second_hello_message"
+      "callback": "main_information"
     },
     "button_2": {
-      "callback": "second_hello_message"
+      "callback": "frequent_questions"
     },
     "button_3": {
-      "callback": "second_hello_message"
+      "callback": "communication_with_manager"
+    },
+    "button_4": {
+      "callback": "support"
+    },
+    "button_5": {
+      "callback": "main_menu"
+    },
+    "button_6": {
+      "callback": "main_information"
+    },
+    "button_7": {
+      "callback": "drivers_handbook"
     }
   },
-  "second_hello_message": {
+  "main_information": {
     "button_1": {
-      "callback": "first_hello_message"
+      "callback": "main_menu"
+    },
+    "button_2": {
+      "callback": "main_menu"
+    },
+    "button_3": {
+      "callback": "main_menu"
+    }
+  },
+  "frequent_questions": {
+    "button_1": {
+      "callback": "main_menu"
+    },
+    "button_2": {
+      "callback": "main_menu"
+    },
+    "button_3": {
+      "callback": "main_menu"
+    },
+    "button_4": {
+      "callback": "main_menu"
+    },
+    "button_5": {
+      "callback": "main_menu"
+    },
+    "button_6": {
+      "callback": "main_menu"
+    }
+  },
+  "communication_with_manager": {
+    "button_1": {
+      "callback": "main_menu"
+    },
+    "button_2": {
+      "callback": "main_menu"
+    }
+  },
+  "support": {
+    "button_1": {
+      "callback": "main_menu"
+    },
+    "button_2": {
+      "callback": "main_menu"
+    },
+    "button_3": {
+      "callback": "main_menu"
+    },
+    "button_4": {
+      "callback": "main_menu"
+    }
+  },
+  "drivers_handbook": {
+    "button_1": {
+      "callback": "main_menu"
+    },
+    "button_2": {
+      "callback": "main_menu"
+    },
+    "button_3": {
+      "callback": "main_menu"
+    },
+    "button_4": {
+      "callback": "main_menu"
+    },
+    "button_5": {
+      "callback": "main_menu"
+    },
+    "button_6": {
+      "callback": "main_menu"
     }
   }
 }

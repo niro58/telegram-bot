@@ -1,19 +1,55 @@
 {
   "start": {
-    "text": "choose language",
-    "button_1": "en",
-    "button_2": "ru",
-    "button_3": "ua",
-    "button_4": "cz"
+    "text": "Выбор языка",
+    "button_1": "Русский",
+    "button_2": "Український",
+    "button_3": "Čeština",
+    "button_4": "English"
   },
-  "first_hello_message": {
-    "text": "first_hello_world",
-    "button_1": "first_button_1",
-    "button_2": "first_button_2",
-    "button_3": "first_button_3"
+  "main_menu": {
+    "text": "Menu",
+    "button_1": "Main Information",
+    "button_2": "Frequent Questions",
+    "button_3": "Communication with manager",
+    "button_4": "Support",
+    "button_5": "XXXXXX",
+    "button_6": "XXXXXX",
+    "button_7": "Driver's Handbook"
   },
-  "second_hello_message": {
-    "text": "second_hello_world",
-    "button_1": "second_button_1"
+  "main_information": {
+    "text": "Main information",
+    "button_1": "Tariffs",
+    "button_2": "OnTaxi Driver Instructions",
+    "button_3": "Menu"
+  },
+  "frequent_questions": {
+    "text": "Frequent Questions",
+    "button_1": "Filter customization",
+    "button_2": "What you need to work",
+    "button_3": "Cancellation of order",
+    "button_4": "How to register properly",
+    "button_5": "Waiting time",
+    "button_6": "Menu"
+  },
+  "communication_with_manager": {
+    "text": "Switch to chat with the manager, via bot. For faster data processing please write (tel. number; car number)",
+    "button_1": "Chat",
+    "button_2": "Menu"
+  },
+  "support": {
+    "text": "Support",
+    "button_1": "Contacts",
+    "button_2": "Driver's chats",
+    "button_3": "Leave a review",
+    "button_4": "Menu"
+  },
+  "drivers_handbook": {
+    "text": "Driver's handbook",
+    "button_1": "Getting started in the TAXI industry",
+    "button_2": "Airport",
+    "button_3": "Your car",
+    "button_4": "Basic laws and regulations related to TAXI",
+    "button_5": "XXXXXX",
+    "button_6": "Menu"
   }
 }

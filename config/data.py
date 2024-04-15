@@ -14,7 +14,8 @@ class DataStorage:
         return cls.instance
 
     def set_language(self, language: str):
-        self.text_data = json.load(open(f"chat/" + language + ".json"))
+        self.text_data = json.load(
+            open(f"chat/" + language + ".json", encoding="utf-8"))
         self.button_data = json.load(open(f"chat/button.json"))
         self.command_data = json.load(open(f"chat/command_enum_value.json"))
 

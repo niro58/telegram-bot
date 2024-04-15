@@ -67,15 +67,22 @@ class Commands:
 
         text = self.data.get_state_text(self.current_state_data["name"])
 
-        reply_keyboard = [[]]
+        max_columns = 3
+        index = 0
+        reply_keyboard = []
         for key, value in text.items():
+            if len(reply_keyboard) == index:
+                reply_keyboard.append([])
             if "button" in key:
-                reply_keyboard[0].append(value["text"])
+                reply_keyboard[index].append(value["text"])
+            if len(reply_keyboard[index]) == max_columns:
+                index += 1
 
         await update.message.reply_text(text["text"],
                                         reply_markup=ReplyKeyboardMarkup(
                                             reply_keyboard,
-                                            one_time_keyboard=True)
+                                            one_time_keyboard=True,
+                                            resize_keyboard=True)
                                         )
         return 0
 
