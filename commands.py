@@ -48,7 +48,7 @@ class Commands:
 
         self.logger.log(logging.INFO, f"User message: {user_message}")
         self.logger.log(logging.INFO, self.current_state_data)
-
+        self.logger.log(logging.INFO, self.data.get_all())
         # if self.data.get_state_command(self.current_state_data["name"]) == CommandEnum.LANGUAGE_SELECTOR:
         #    self.command_handler.language_selector(user_message)
         # elif self.data.get_state_command(self.current_state_data["name"]) == CommandEnum.MOVE_TO_REAL_CHAT:

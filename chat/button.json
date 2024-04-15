@@ -1,16 +1,20 @@
 {
   "start": {
     "button_1": {
-      "callback": "main_menu"
+      "callback": "main_menu",
+      "command":1
     },
     "button_2": {
-      "callback": "main_menu"
+      "callback": "main_menu",
+      "command":1
     },
     "button_3": {
-      "callback": "main_menu"
+      "callback": "main_menu",
+      "command":1
     },
     "button_4": {
-      "callback": "main_menu"
+      "callback": "main_menu",
+      "command":1
     }
   },
   "main_menu": {

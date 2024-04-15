@@ -1,0 +1,74 @@
+{
+  "start": {
+    "text": "Выбор языка",
+    "button_1": { "text": "Русский", "callback": "main_menu", "command": 1 },
+    "button_2": {
+      "text": "Український",
+      "callback": "main_menu",
+      "command": 1
+    },
+    "button_3": { "text": "Čeština", "callback": "main_menu", "command": 1 },
+    "button_4": { "text": "English", "callback": "main_menu", "command": 1 }
+  },
+  "main_menu": {
+    "text": "Menu",
+    "button_1": { "text": "Main Information", "callback": "main_information" },
+    "button_2": {
+      "text": "Frequent Questions",
+      "callback": "frequent_questions"
+    },
+    "button_3": {
+      "text": "Communication with manager",
+      "callback": "communication_with_manager"
+    },
+    "button_4": { "text": "Support", "callback": "support" },
+    "button_5": { "text": "XXXXXX", "callback": "main_menu" },
+    "button_6": { "text": "XXXXXX", "callback": "main_information" },
+    "button_7": { "text": "Driver's Handbook", "callback": "drivers_handbook" }
+  },
+  "main_information": {
+    "text": "Main information",
+    "button_1": { "text": "Tariffs", "callback": "main_menu" },
+    "button_2": {
+      "text": "OnTaxi Driver Instructions",
+      "callback": "main_menu"
+    },
+    "button_3": { "text": "Menu", "callback": "main_menu" }
+  },
+  "frequent_questions": {
+    "text": "Frequent Questions",
+    "button_1": { "text": "Filter customization", "callback": "main_menu" },
+    "button_2": { "text": "What you need to work", "callback": "main_menu" },
+    "button_3": { "text": "Cancellation of order", "callback": "main_menu" },
+    "button_4": { "text": "How to register properly", "callback": "main_menu" },
+    "button_5": { "text": "Waiting time", "callback": "main_menu" },
+    "button_6": { "text": "Menu", "callback": "main_menu" }
+  },
+  "communication_with_manager": {
+    "text": "Switch to chat with the manager, via bot. For faster data processing please write (tel. number; car number)",
+    "button_1": { "text": "Chat", "callback": "main_menu" },
+    "button_2": { "text": "Menu", "callback": "main_menu" }
+  },
+  "support": {
+    "text": "Support",
+    "button_1": { "text": "Contacts", "callback": "main_menu" },
+    "button_2": { "text": "Driver's chats", "callback": "main_menu" },
+    "button_3": { "text": "Leave a review", "callback": "main_menu" },
+    "button_4": { "text": "Menu", "callback": "main_menu" }
+  },
+  "drivers_handbook": {
+    "text": "Driver's handbook",
+    "button_1": {
+      "text": "Getting started in the TAXI industry",
+      "callback": "main_menu"
+    },
+    "button_2": { "text": "Airport", "callback": "main_menu" },
+    "button_3": { "text": "Your car", "callback": "main_menu" },
+    "button_4": {
+      "text": "Basic laws and regulations related to TAXI",
+      "callback": "main_menu"
+    },
+    "button_5": { "text": "XXXXXX", "callback": "main_menu" },
+    "button_6": { "text": "Menu", "callback": "main_menu" }
+  }
+}
