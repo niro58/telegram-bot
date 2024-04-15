@@ -1,0 +1,32 @@
+{
+  "start": {
+    "button_1": {
+      "callback": "first_hello_message"
+    },
+    "button_2": {
+      "callback": "first_hello_message"
+    },
+    "button_3": {
+      "callback": "first_hello_message"
+    },
+    "button_4": {
+      "callback": "first_hello_message"
+    }
+  },
+  "first_hello_message": {
+    "button_1": {
+      "callback": "second_hello_message"
+    },
+    "button_2": {
+      "callback": "second_hello_message"
+    },
+    "button_3": {
+      "callback": "second_hello_message"
+    }
+  },
+  "second_hello_message": {
+    "button_1": {
+      "callback": "first_hello_message"
+    }
+  }
+}

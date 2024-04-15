@@ -1,0 +1,19 @@
+{
+  "start": {
+    "text": "choose language",
+    "button_1": "en",
+    "button_2": "ru",
+    "button_3": "ua",
+    "button_4": "cz"
+  },
+  "first_hello_message": {
+    "text": "first_hello_world",
+    "button_1": "first_button_1",
+    "button_2": "first_button_2",
+    "button_3": "first_button_3"
+  },
+  "second_hello_message": {
+    "text": "second_hello_world",
+    "button_1": "second_button_1"
+  }
+}
