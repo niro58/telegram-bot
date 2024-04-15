@@ -23,8 +23,7 @@ def main():
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", commands.basic_command)],
         states={
-            0: [MessageHandler(filters.TEXT, commands.command_processing)],
-            1: [MessageHandler(filters.TEXT, commands.basic_command)],
+            0: [MessageHandler(None, commands.basic_command)],
         },
         fallbacks=[CommandHandler("cancel", commands.cancel)],
     )

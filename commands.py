@@ -42,7 +42,7 @@ class Commands:
             self.current_state_data["name"]
         )
 
-    async def command_processing(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    def _command_processing(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         self.logger.log(logging.INFO, "!!!!!!!!!!COMMAND PROCESSING!!!!!!!!!!")
         user_message = update.message.text
 
@@ -58,11 +58,13 @@ class Commands:
 
         self.logger.log(logging.INFO, f"Next state: {
                         self.current_state_data['name']}")
-
-        return 1
+        self.logger.log(logging.INFO, f"RETURNING 1")
+        return 0
 
     async def basic_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         self.logger.log(logging.INFO, "!!!!!!!!!!BASIC COMMAND!!!!!!!!!!")
+        self._command_processing(update, context)
+
         text = self.data.get_state_text(self.current_state_data["name"])
 
         reply_keyboard = [[]]
