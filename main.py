@@ -21,9 +21,9 @@ def main():
     commands = Commands()
 
     conv_handler = ConversationHandler(
-        entry_points=[CommandHandler("start", commands.basic_command)],
+        entry_points=[CommandHandler("start", commands.start)],
         states={
-            0: [MessageHandler(None, commands.basic_command)],
+            1: [MessageHandler(filters.TEXT, commands.basic_command)],
         },
         fallbacks=[CommandHandler("cancel", commands.cancel)],
     )

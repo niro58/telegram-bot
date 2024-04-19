@@ -1,0 +1,8 @@
+{
+  "tariffs": {
+    "text": "http://ontaxi.cz/cs/drivers/praha \n С тарифами в городе Прага можно ознакомится на нашем сайте"
+  },
+  "instruction_ontaxi_driver": {
+    "text": "Для ознакомления с программой OnTaxi Driver Ви можете ознакомиться с нашей инструкцией для водителей https://drive.google.com/file/d/1FFeIquwQmVTifEOx4DwEOEioJiQsxI4p/view?usp=sharing Новая инструкция с актуальными данными сейчас в разработке"
+  }
+}

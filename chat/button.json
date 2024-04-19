@@ -2,42 +2,49 @@
   "start": {
     "button_1": {
       "callback": "main_menu",
-      "command":1
+      "command": 0
     },
     "button_2": {
       "callback": "main_menu",
-      "command":1
+      "command": 0
     },
     "button_3": {
       "callback": "main_menu",
-      "command":1
+      "command": 0
     },
     "button_4": {
       "callback": "main_menu",
-      "command":1
+      "command": 0
     }
   },
   "main_menu": {
     "button_1": {
-      "callback": "main_information"
+      "callback": "main_information",
+      "command": 2
     },
     "button_2": {
-      "callback": "frequent_questions"
+      "callback": "frequent_questions",
+      "command": 2
     },
     "button_3": {
-      "callback": "communication_with_manager"
+      "callback": "communication_with_manager",
+      "command": 2
     },
     "button_4": {
-      "callback": "support"
+      "callback": "support",
+      "command": 2
     },
     "button_5": {
-      "callback": "main_menu"
+      "callback": "main_menu",
+      "command": 2
     },
     "button_6": {
-      "callback": "main_information"
+      "callback": "main_information",
+      "command": 2
     },
     "button_7": {
-      "callback": "drivers_handbook"
+      "callback": "drivers_handbook",
+      "command": 2
     }
   },
   "main_information": {
