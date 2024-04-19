@@ -19,40 +19,36 @@
   },
   "main_menu": {
     "button_1": {
-      "callback": "main_information",
-      "command": 2
+      "callback": "main_information"
     },
     "button_2": {
-      "callback": "frequent_questions",
-      "command": 2
+      "callback": "support"
     },
     "button_3": {
+      "callback": "frequent_questions"
+    },
+    "button_4": {
       "callback": "communication_with_manager",
       "command": 2
     },
-    "button_4": {
-      "callback": "support",
-      "command": 2
-    },
     "button_5": {
-      "callback": "main_menu",
-      "command": 2
+      "callback": "main_menu"
     },
     "button_6": {
-      "callback": "main_information",
-      "command": 2
+      "callback": "main_menu"
     },
     "button_7": {
-      "callback": "drivers_handbook",
-      "command": 2
+      "callback": "drivers_handbook"
     }
   },
   "main_information": {
     "button_1": {
-      "callback": "main_menu"
+      "callback": "tariffs",
+      "command": 2
     },
     "button_2": {
-      "callback": "main_menu"
+      "callback": "instruction_ontaxi_driver",
+      "command": 2
     },
     "button_3": {
       "callback": "main_menu"
@@ -60,41 +56,41 @@
   },
   "frequent_questions": {
     "button_1": {
-      "callback": "main_menu"
+      "callback": "filter_settings",
+      "command": 2
     },
     "button_2": {
-      "callback": "main_menu"
+      "callback": "work_requirements",
+      "command": 2
     },
     "button_3": {
-      "callback": "main_menu"
+      "callback": "order_cancellation",
+      "command": 2
     },
     "button_4": {
-      "callback": "main_menu"
+      "callback": "how_to_register",
+      "command": 2
     },
     "button_5": {
-      "callback": "main_menu"
+      "callback": "idle_in_orders",
+      "command": 2
     },
     "button_6": {
       "callback": "main_menu"
     }
   },
-  "communication_with_manager": {
-    "button_1": {
-      "callback": "main_menu"
-    },
-    "button_2": {
-      "callback": "main_menu"
-    }
-  },
   "support": {
     "button_1": {
-      "callback": "main_menu"
+      "callback": "contacts",
+      "command": 2
     },
     "button_2": {
-      "callback": "main_menu"
+      "callback": "driver_chats",
+      "command": 2
     },
     "button_3": {
-      "callback": "main_menu"
+      "callback": "leave_feedback",
+      "command": 2
     },
     "button_4": {
       "callback": "main_menu"
@@ -102,19 +98,23 @@
   },
   "drivers_handbook": {
     "button_1": {
-      "callback": "main_menu"
+      "callback": "work_beginning",
+      "command": 2
     },
     "button_2": {
-      "callback": "main_menu"
+      "callback": "airport",
+      "command": 2
     },
     "button_3": {
-      "callback": "main_menu"
+      "callback": "your_vehicle",
+      "command": 2
     },
     "button_4": {
-      "callback": "main_menu"
+      "callback": "basic_laws_and_rules",
+      "command": 2
     },
     "button_5": {
-      "callback": "main_menu"
+      "callback": "drivers_handbook"
     },
     "button_6": {
       "callback": "main_menu"

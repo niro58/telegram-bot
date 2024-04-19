@@ -30,11 +30,15 @@ class Commands:
 
     async def _process_reply(self, user: User, reply_message: str):
         next_state_key = self.data.get_next_state_key(
-            user.state, reply_message
+            user.state,
+            reply_message,
+            user.language
         )
 
         button_command = self.data.get_button_command(
-            user.state, reply_message
+            user.state,
+            reply_message,
+            user.language
         )
         self.logger.log(logging.INFO, f"Reply message: {reply_message}")
         self.logger.log(logging.INFO, f"Next state key: {next_state_key}")
@@ -71,11 +75,11 @@ class Commands:
     async def start(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         self.logger.log(logging.INFO, "Start command")
 
-        self.user_data.remove_user(update.message.chat_id)
-        user = self.user_data.create_user(
+        user = self.user_data.reset_user(
             update.message.chat_id,
             update.message.from_user.username
         )
+
         user_state = self.data.get_state_value(
             user.state,
             user.language

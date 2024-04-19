@@ -41,6 +41,14 @@ class UserData:
         }
         self.save_users()
 
+    def reset_user(self, chat_id: int, username: str):
+        self.remove_user(chat_id)
+        user = self.create_user(
+            chat_id,
+            username
+        )
+        return user
+
     def remove_user(self, chat_id: int):
         try:
             self.users.pop(chat_id)
@@ -72,6 +80,8 @@ class UserData:
             json.dump({}, open("data/user_data.json", "w"))
 
         self.users = json.load(open("data/user_data.json", encoding="utf-8"))
+        self.users = {int(k): v for k, v in json.load(
+            open("data/user_data.json", encoding="utf-8")).items()}
 
     def save_users(self):
         json.dump(self.users, open("data/user_data.json", "w"))

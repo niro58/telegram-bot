@@ -11,22 +11,17 @@ class DataStorage:
             cls.instance.languages = ["cz", "en", "ru", "ua"]
             cls.instance.data = {}
             for language in cls.instance.languages:
+                cls.instance.data[language] = {}
                 cls.instance.define_insta_reply_data(language)
                 cls.instance.define_state_data(language)
             json.dump(cls.instance.data, open("data_defined.json", "w"))
 
         return cls.instance
 
-    def set_language(self, language: str):
-        self.language = language
-        self.define_state_data(language)
-        self.define_insta_reply_data(language)
-        json.dump(self.data, open("data_defined.json", "w"))
-
     def define_insta_reply_data(self, language: str):
         insta_reply_data = json.load(
             open(f"chat/insta_replies/" + language + ".json", encoding="utf-8"))
-        self.data[language] = {}
+
         self.data[language]["insta_replies"] = insta_reply_data
 
     def define_state_data(self, language: str):
@@ -43,10 +38,9 @@ class DataStorage:
                 if key in button_data and key2 in button_data[key]:
                     data[key][key2] = data[key][key2] | button_data[key][key2]
 
-        self.data[language] = {}
         self.data[language]["states"] = data
 
-    def get_state_value(self, key: str, language: str = "en"):
+    def get_state_value(self, key: str, language: str):
         data = None
         if key in self.data[language]["states"]:
             data = self.data[language]["states"][key]
@@ -58,11 +52,11 @@ class DataStorage:
         data["key"] = key
         return data
 
-    def get_insta_reply(self, key: str, language: str = "en"):
+    def get_insta_reply(self, key: str, language: str):
         return self.data[language]["insta_replies"][key]
 
-    def get_button_command(self, state_key, reply_message):
-        current_state_data = self.get_state_value(state_key)
+    def get_button_command(self, state_key, reply_message, language):
+        current_state_data = self.get_state_value(state_key, language)
 
         for key, value in current_state_data.items():
             if "button" in key and value["text"] == reply_message and "command" in value:
@@ -70,8 +64,8 @@ class DataStorage:
 
         return None
 
-    def get_next_state_key(self, state_key, reply_message):
-        current_state_data = self.get_state_value(state_key)
+    def get_next_state_key(self, state_key, reply_message, language):
+        current_state_data = self.get_state_value(state_key, language)
 
         for key, value in current_state_data.items():
             if "button" in key and value["text"] == reply_message:

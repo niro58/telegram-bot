@@ -5,8 +5,6 @@ from config.data import DataStorage
 
 
 class CommandHandler:
-    def select_language(self, language):
-        DataStorage().set_language(language)
 
     async def print_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE, message: str):
         await context.bot.send_message(
