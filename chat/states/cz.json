@@ -1,5 +1,6 @@
 {
   "start": {
+    "image":"Language_Selection.jpg",
     "text": "Выбор языка",
     "button_1": "Русский",
     "button_2": "Український",

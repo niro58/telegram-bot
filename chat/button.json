@@ -98,8 +98,7 @@
   },
   "drivers_handbook": {
     "button_1": {
-      "callback": "work_beginning",
-      "command": 2
+      "callback": "guide_to_start_working"
     },
     "button_2": {
       "callback": "airport",
@@ -117,6 +116,23 @@
       "callback": "drivers_handbook"
     },
     "button_6": {
+      "callback": "main_menu"
+    }
+  },
+  "guide_to_start_working": {
+    "button_1": {
+      "callback": "joining_transport_company",
+      "command": 2
+    },
+    "button_2": {
+      "callback": "work_on_zivnostensky_list",
+      "command": 2
+    },
+    "button_3": {
+      "callback": "work_through_fleet",
+      "command": 2
+    },
+    "button_4": {
       "callback": "main_menu"
     }
   }

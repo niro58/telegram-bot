@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (
@@ -17,7 +18,9 @@ from my_enums.commands import CommandEnum
 
 
 class Commands:
+
     def __init__(self, language: str = "en"):
+        self.image_folder = "./public"
         self.data: DataStorage = DataStorage()
         self.user_data: UserData = UserData()
         self.command_handler = CommandHandler()
@@ -49,6 +52,7 @@ class Commands:
             user.reply_message_state = user.state
         elif button_command == CommandEnum.TEXT_PRINT:
             user.reply_message_state = next_state_key
+
         elif button_command == CommandEnum.LANGUAGE_SELECTOR:
             if reply_message == "Русский":
                 user.language = "ru"
@@ -66,6 +70,7 @@ class Commands:
         self.user_data.update_user(user)
 
     async def _command_processing(self, user: User, update: Update, context: ContextTypes.DEFAULT_TYPE):
+
         user_message = update.message.text
 
         self.logger.log(logging.INFO, f"User message: {user_message}")
@@ -88,7 +93,6 @@ class Commands:
             user.reply_message_state,
             user.language
         )
-
         max_columns = 3
         index = 0
         reply_keyboard = []
@@ -100,6 +104,12 @@ class Commands:
             if len(reply_keyboard[index]) == max_columns:
                 index += 1
 
+        if "image" in user_state:
+            await context.bot.send_photo(
+                chat_id=update.message.chat_id,
+                photo=os.path.join(self.image_folder, user_state["image"])
+            )
+        print("SENDING TEXT AFTER IMAGE")
         await update.message.reply_text(
             user_reply_state["text"],
             reply_markup=ReplyKeyboardMarkup(
@@ -138,7 +148,13 @@ class Commands:
                 reply_keyboard[index].append(value["text"])
             if len(reply_keyboard[index]) == max_columns:
                 index += 1
-
+        print(user_reply_state)
+        if "image" in user_reply_state:
+            await context.bot.send_photo(
+                chat_id=update.message.chat_id,
+                photo=os.path.join(self.image_folder,
+                                   user_reply_state["image"])
+            )
         await update.message.reply_text(
             user_reply_state["text"],
             reply_markup=ReplyKeyboardMarkup(
