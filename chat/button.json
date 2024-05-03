@@ -109,11 +109,11 @@
       "command": 2
     },
     "button_2": {
-      "callback": "work_on_zivnostensky_list",
+      "callback": "work_through_fleet",
       "command": 2
     },
     "button_3": {
-      "callback": "work_through_fleet",
+      "callback": "work_on_zivnostensky_list",
       "command": 2
     },
     "button_4": {

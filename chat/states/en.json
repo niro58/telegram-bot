@@ -29,21 +29,21 @@
     "text": "Select an option below:",
     "button_1": "📞Contacts📞",
     "button_2": "👀Drivers' groups🙊",
-    "button_3": "Stížnosti a návrhy💭",
+    "button_3": "Complaints and suggestions 💭",
     "button_4": "Back"
   },
   "drivers_handbook": {
     "text": "Select an option below:",
     "image": "Drivers_Handbook.jpg",
-    "button_1": "🌍Nástup do práce v taxíku🌍",
-    "button_2": "🚕 Základní zákony a předpisy týkající se taxislužby🚕",
+    "button_1": "🌍Starting work in a taxi🌍",
+    "button_2": "🚕 Basic laws and regulations related to taxis🚕",
     "button_3": "Back"
   },
   "guide_to_start_working": {
     "text": "Select an option below::",
-    "button_1": "🚕🏢Dopravní společnost",
-    "button_2": "🌍✈️Flotily",
-    "button_3": "💼💰Živnostenský list",
+    "button_1": "🚕🏢 Shipping company",
+    "button_2": "🌍✈️ Fleets",
+    "button_3": "💼💰 Živnostenský list",
     "button_4": "Back"
   }
 }
