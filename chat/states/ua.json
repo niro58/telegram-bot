@@ -1,56 +1,49 @@
 {
   "start": {
     "image": "Language_Selection.jpg",
-    "text": "Выбор языка",
+    "text": "Виберіть пункт нижче:",
     "button_1": "Русский",
     "button_2": "Український",
     "button_3": "Čeština",
     "button_4": "English"
   },
   "main_menu": {
-    "text": "Menu UAAA",
-    "button_1": "Main Information",
-    "button_2": "Frequent Questions",
-    "button_3": "Communication with manager",
-    "button_4": "Support",
-    "button_5": "XXXXXX",
-    "button_6": "XXXXXX",
-    "button_7": "Driver's Handbook"
-  },
-  "main_information": {
-    "text": "Main information",
-    "button_1": "Tariffs",
-    "button_2": "OnTaxi Driver Instructions",
-    "button_3": "Menu"
+    "text": "Виберіть пункт нижче:",
+    "button_1": "📍Тарифи📍",
+    "button_2": "👤Підтримка👤",
+    "button_3": "❓Часті питання❓",
+    "button_4": "💬Зв'язок з менеджером💬",
+    "button_5": "💡Довідник для водіїв💡"
   },
   "frequent_questions": {
-    "text": "Frequent Questions",
-    "button_1": "Filter customization",
-    "button_2": "What you need to work",
-    "button_3": "Cancellation of order",
-    "button_4": "How to register properly",
-    "button_5": "Waiting time",
-    "button_6": "Menu"
-  },
-  "communication_with_manager": {
-    "text": "Switch to chat with the manager, via bot. For faster data processing please write (tel. number; car number)",
-    "button_1": "Chat",
-    "button_2": "Menu"
+    "text": "Виберіть пункт нижче:",
+    "image": "FAQ.jpg",
+    "button_1": "❓Налаштування фільтрів❓",
+    "button_2": "❓Як правильно зареєструватись❓",
+    "button_3": "❓Що потрібно для роботи❓",
+    "button_4": "❓Простій у замовленнях❓",
+    "button_5": "❓Відмова від замовлення❓",
+    "button_6": "Назад"
   },
   "support": {
-    "text": "Support",
-    "button_1": "Contacts",
-    "button_2": "Driver's chats",
-    "button_3": "Leave a review",
-    "button_4": "Menu"
+    "text": "Виберіть пункт нижче:",
+    "button_1": "📞Контакти📞",
+    "button_2": "👀Чати водіїв🙊",
+    "button_3": "Залишити відгук💭",
+    "button_4": "Назад"
   },
   "drivers_handbook": {
-    "text": "Driver's handbook",
-    "button_1": "Getting started in the TAXI industry",
-    "button_2": "Airport",
-    "button_3": "Your car",
-    "button_4": "Basic laws and regulations related to TAXI",
-    "button_5": "XXXXXX",
-    "button_6": "Menu"
+    "text": "Виберіть пункт нижче:",
+    "image": "Drivers_Handbook.jpg",
+    "button_1": "🌍Початок роботи в таксі🌍",
+    "button_2": "🚕Основні закони і правила пов'язані з таксі🚕",
+    "button_3": "Назад"
+  },
+  "guide_to_start_working": {
+    "text": "Виберіть пункт нижче:",
+    "button_1": "🚕🏢Транспортна компанія",
+    "button_2": "🌍✈️ Флотілія",
+    "button_3": "💼💰 Živnostenský list",
+    "button_4": "Назад"
   }
 }

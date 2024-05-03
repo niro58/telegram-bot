@@ -19,7 +19,8 @@
   },
   "main_menu": {
     "button_1": {
-      "callback": "main_information"
+      "callback": "tariffs",
+      "command": 2
     },
     "button_2": {
       "callback": "support"
@@ -32,12 +33,6 @@
       "command": 2
     },
     "button_5": {
-      "callback": "main_menu"
-    },
-    "button_6": {
-      "callback": "main_menu"
-    },
-    "button_7": {
       "callback": "drivers_handbook"
     }
   },
@@ -60,19 +55,19 @@
       "command": 2
     },
     "button_2": {
-      "callback": "work_requirements",
-      "command": 2
-    },
-    "button_3": {
-      "callback": "order_cancellation",
-      "command": 2
-    },
-    "button_4": {
       "callback": "how_to_register",
       "command": 2
     },
-    "button_5": {
+    "button_3": {
+      "callback": "work_requirements",
+      "command": 2
+    },
+    "button_4": {
       "callback": "idle_in_orders",
+      "command": 2
+    },
+    "button_5": {
+      "callback": "order_cancellation",
       "command": 2
     },
     "button_6": {
@@ -85,11 +80,11 @@
       "command": 2
     },
     "button_2": {
-      "callback": "driver_chats",
+      "callback": "driver_telegram_chats",
       "command": 2
     },
     "button_3": {
-      "callback": "leave_feedback",
+      "callback": "complaints_and_suggestion",
       "command": 2
     },
     "button_4": {
@@ -101,21 +96,10 @@
       "callback": "guide_to_start_working"
     },
     "button_2": {
-      "callback": "airport",
-      "command": 2
-    },
-    "button_3": {
-      "callback": "your_vehicle",
-      "command": 2
-    },
-    "button_4": {
       "callback": "basic_laws_and_rules",
       "command": 2
     },
-    "button_5": {
-      "callback": "drivers_handbook"
-    },
-    "button_6": {
+    "button_3": {
       "callback": "main_menu"
     }
   },
@@ -133,7 +117,7 @@
       "command": 2
     },
     "button_4": {
-      "callback": "main_menu"
+      "callback": "drivers_handbook"
     }
   }
 }

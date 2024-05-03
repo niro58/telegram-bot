@@ -1,56 +1,49 @@
 {
   "start": {
-    "image":"Language_Selection.jpg",
-    "text": "Выбор языка",
+    "image": "Language_Selection.jpg",
+    "text": "Vyberte níže uvedenou možnost:",
     "button_1": "Русский",
     "button_2": "Український",
     "button_3": "Čeština",
     "button_4": "English"
   },
   "main_menu": {
-    "text": "Menu CZZZ",
-    "button_1": "Main Information",
-    "button_2": "Frequent Questions",
-    "button_3": "Communication with manager",
-    "button_4": "Support",
-    "button_5": "XXXXXX",
-    "button_6": "XXXXXX",
-    "button_7": "Driver's Handbook"
-  },
-  "main_information": {
-    "text": "Main information",
-    "button_1": "Tariffs",
-    "button_2": "OnTaxi Driver Instructions",
-    "button_3": "Menu"
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "📍Tarify📍",
+    "button_2": "👤Podpora👤",
+    "button_3": "❓Často kladené otázky❓",
+    "button_4": "💬Komunikace s podporou💬",
+    "button_5": "💡Příručka řidiče💡"
   },
   "frequent_questions": {
-    "text": "Frequent Questions",
-    "button_1": "Filter customization",
-    "button_2": "What you need to work",
-    "button_3": "Cancellation of order",
-    "button_4": "How to register properly",
-    "button_5": "Waiting time",
-    "button_6": "Menu"
-  },
-  "communication_with_manager": {
-    "text": "Switch to chat with the manager, via bot. For faster data processing please write (tel. number; car number)",
-    "button_1": "Chat",
-    "button_2": "Menu"
+    "text": "Vyberte níže uvedenou možnost:",
+    "image": "FAQ.jpg",
+    "button_1": "❓Nastavení filtru❓",
+    "button_2": "❓Jak se správně zaregistrovat❓",
+    "button_3": "❓Požadavky na řidiče❓",
+    "button_4": "❓Čekání na zákazníka❓",
+    "button_5": "❓Zrušení objednávky❓",
+    "button_6": "Vrátit se zpět"
   },
   "support": {
-    "text": "Support",
-    "button_1": "Contacts",
-    "button_2": "Driver's chats",
-    "button_3": "Leave a review",
-    "button_4": "Menu"
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "📞Kontakty📞",
+    "button_2": "👀Skupiny řidičů🙊",
+    "button_3": "Stížnosti a návrhy💭",
+    "button_4": "Vrátit se zpět"
   },
   "drivers_handbook": {
-    "text": "Driver's handbook",
-    "button_1": "Getting started in the TAXI industry",
-    "button_2": "Airport",
-    "button_3": "Your car",
-    "button_4": "Basic laws and regulations related to TAXI",
-    "button_5": "XXXXXX",
-    "button_6": "Menu"
+    "text": "Vyberte níže uvedenou možnost:",
+    "image": "Drivers_Handbook.jpg",
+    "button_1": "🌍Nástup do práce v taxíku🌍",
+    "button_2": "🚕 Základní zákony a předpisy týkající se taxislužby🚕",
+    "button_3": "Vrátit se zpět"
+  },
+  "guide_to_start_working": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "🚕🏢Dopravní společnost",
+    "button_2": "🌍✈️Flotily",
+    "button_3": "💼💰Živnostenský list",
+    "button_4": "Vrátit se zpět"
   }
 }
