@@ -1,0 +1,49 @@
+{
+  "start": {
+    "image": "Language_Selection.jpg",
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "Русский",
+    "button_2": "Український",
+    "button_3": "Čeština",
+    "button_4": "English"
+  },
+  "main_menu": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "📍Tarify📍",
+    "button_2": "👤Podpora👤",
+    "button_3": "❓Často kladené otázky❓",
+    "button_4": "💬Komunikace s podporou💬",
+    "button_5": "💡Příručka řidiče💡"
+  },
+  "frequent_questions": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "image": "FAQ.jpg",
+    "button_1": "❓Nastavení filtru❓",
+    "button_2": "❓Jak se správně zaregistrovat❓",
+    "button_3": "❓Požadavky na řidiče❓",
+    "button_4": "❓Čekání na zákazníka❓",
+    "button_5": "❓Zrušení objednávky❓",
+    "button_6": "Vrátit se zpět"
+  },
+  "support": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "📞Kontakty📞",
+    "button_2": "👀Skupiny řidičů🙊",
+    "button_3": "Stížnosti a návrhy💭",
+    "button_4": "Vrátit se zpět"
+  },
+  "drivers_handbook": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "image": "Drivers_Handbook.jpg",
+    "button_1": "🌍Nástup do práce v taxíku🌍",
+    "button_2": "🚕 Základní zákony a předpisy týkající se taxislužby🚕",
+    "button_3": "Vrátit se zpět"
+  },
+  "guide_to_start_working": {
+    "text": "Vyberte níže uvedenou možnost:",
+    "button_1": "🚕🏢Dopravní společnost",
+    "button_2": "🌍✈️Flotily",
+    "button_3": "💼💰Živnostenský list",
+    "button_4": "Vrátit se zpět"
+  }
+}
