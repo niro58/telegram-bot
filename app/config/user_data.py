@@ -14,6 +14,7 @@ class User:
 
 class UserData:
     def __init__(self):
+        self.filepath = "app/data/user_data.json"
         self.load_users()
 
     def get_user(self, chat_id: int) -> User:
@@ -74,14 +75,13 @@ class UserData:
         return user
 
     def load_users(self):
-        if not os.path.exists("data"):
-            os.makedirs("data")
-        if not os.path.exists("data/user_data.json"):
-            json.dump({}, open("data/user_data.json", "w"))
+        if not os.path.exists(self.filepath):
+            json.dump({}, open(self.filepath, "w"))
 
-        self.users = json.load(open("data/user_data.json", encoding="utf-8"))
+        self.users = json.load(
+            open(self.filepath, encoding="utf-8"))
         self.users = {int(k): v for k, v in json.load(
-            open("data/user_data.json", encoding="utf-8")).items()}
+            open(self.filepath, encoding="utf-8")).items()}
 
     def save_users(self):
-        json.dump(self.users, open("data/user_data.json", "w"))
+        json.dump(self.users, open(self.filepath, "w"))

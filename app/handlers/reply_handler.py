@@ -8,10 +8,10 @@ from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import CommandHandler, ContextTypes, ConversationHandler
 
 
-class Commands:
+class ReplyHandler:
 
     def __init__(self):
-        self.image_folder = "app\\public\\"
+        self.image_folder = "app/public"
         self.data: DataStorage = DataStorage()
         self.user_data: UserData = UserData()
         logging.basicConfig(
@@ -95,6 +95,7 @@ class Commands:
 
         if "image" in user_state:
             image_path = os.path.join(self.image_folder, user_state["image"])
+
             if os.path.exists(image_path):
                 await context.bot.send_photo(
                     chat_id=update.message.chat_id,

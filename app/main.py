@@ -1,7 +1,7 @@
 from os import environ as env
 
-from commands.commands import Commands
 from dotenv import load_dotenv
+from handlers.reply_handler import ReplyHandler
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -15,7 +15,7 @@ def main():
     load_dotenv()
 
     application = Application.builder().token(env.get("TELEGRAM_API_KEY")).build()
-    commands = Commands()
+    commands = ReplyHandler()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", commands.start)],
