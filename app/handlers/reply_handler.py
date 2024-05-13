@@ -119,8 +119,12 @@ class ReplyHandler:
 
         if user is None:
             return await self.start(update, context)
-        if user.last_message_timestamp + 0.05 > int(time.time()):
+
+        if user.last_message_timestamp + 0.005 > int(time.time()) or len(update.message.text) > 256:
+            print("Spam, ignore message")
+            print(user.last_message_timestamp, int(time.time()))
             return None
+
         await self._command_processing(user, update, context)
 
         user_state = self.data.get_state_value(
