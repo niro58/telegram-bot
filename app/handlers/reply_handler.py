@@ -1,5 +1,6 @@
 import logging
 import os
+import time
 
 from config.data import DataStorage
 from config.user_data import User, UserData
@@ -82,7 +83,7 @@ class ReplyHandler:
             user.reply_message_state,
             user.language
         )
-        max_columns = 3
+        MAX_COLS = 2
         index = 0
         reply_keyboard = []
         for key, value in user_state.items():
@@ -90,7 +91,7 @@ class ReplyHandler:
                 reply_keyboard.append([])
             if "button" in key:
                 reply_keyboard[index].append(value["text"])
-            if len(reply_keyboard[index]) == max_columns:
+            if len(reply_keyboard[index]) == MAX_COLS:
                 index += 1
 
         if "image" in user_state:
@@ -118,7 +119,8 @@ class ReplyHandler:
 
         if user is None:
             return await self.start(update, context)
-
+        if user.last_message_timestamp + 0.05 > int(time.time()):
+            return None
         await self._command_processing(user, update, context)
 
         user_state = self.data.get_state_value(
@@ -130,7 +132,7 @@ class ReplyHandler:
             user.language
         )
 
-        max_columns = 3
+        MAX_COLS = 2
         index = 0
         reply_keyboard = []
         for key, value in user_state.items():
@@ -138,7 +140,7 @@ class ReplyHandler:
                 reply_keyboard.append([])
             if "button" in key:
                 reply_keyboard[index].append(value["text"])
-            if len(reply_keyboard[index]) == max_columns:
+            if len(reply_keyboard[index]) == MAX_COLS:
                 index += 1
 
         if "image" in user_reply_state:

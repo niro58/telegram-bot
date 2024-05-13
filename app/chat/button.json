@@ -96,11 +96,11 @@
       "callback": "guide_to_start_working"
     },
     "button_2": {
-      "callback": "basic_laws_and_rules",
-      "command": 2
+      "callback": "main_menu"
     },
     "button_3": {
-      "callback": "main_menu"
+      "callback": "basic_laws_and_rules",
+      "command": 2
     }
   },
   "guide_to_start_working": {

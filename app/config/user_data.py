@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from dataclasses import dataclass
 
 
@@ -10,6 +11,7 @@ class User:
     language: str
     state: str
     reply_message_state: str
+    last_message_timestamp: int
 
 
 class UserData:
@@ -27,6 +29,7 @@ class UserData:
             language=data["language"],
             state=data["state"],
             reply_message_state=data["reply_message_state"],
+            last_message_timestamp=data["last_message_timestamp"]
         )
         return user
 
@@ -39,6 +42,7 @@ class UserData:
             "language": user.language,
             "state": user.state,
             "reply_message_state": user.reply_message_state,
+            "last_message_timestamp": time.time(),
         }
         self.save_users()
 
@@ -64,12 +68,14 @@ class UserData:
             language="en",
             state="start",
             reply_message_state="start",
+            last_message_timestamp=int(time.time())
         )
         self.users[chat_id] = {
             "username": user.username,
             "language": user.language,
             "state": user.state,
             "reply_message_state": user.reply_message_state,
+            "last_message_timestamp": user.last_message_timestamp,
         }
         self.save_users()
         return user
